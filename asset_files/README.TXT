@@ -1,0 +1,1 @@
+This folder is only in this version of the game files, to display my assets in png or wav files
