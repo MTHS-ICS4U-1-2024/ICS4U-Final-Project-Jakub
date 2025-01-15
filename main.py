@@ -270,6 +270,11 @@ class GameManager:
         # Update barricades
         self.barricade_1.update()
 
+        # Collision check
+        if (self.player.sprite.overlapsWith(self.barricade_1.sprite)):
+            game.splash("Game Over!", "Press A to restart")
+            game.reset()
+
 # Initialize the GameManager
 game_manager = GameManager()
 
