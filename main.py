@@ -91,7 +91,6 @@ class Barricade:
             # Set x randomly within the road boundary
             self.sprite.x = randint(48,112)
 
-
 # Define the GameManager class
 class GameManager:
     def __init__(self):
@@ -275,7 +274,6 @@ class GameManager:
             ..cc........................cc..
         """), 52, 0)
 
-
     def update(self):
         # Update trees
         self.tree_1.update()
@@ -299,7 +297,7 @@ def increment_score():
     game_manager.score += 1  # Increase score
     info.set_score(game_manager.score)  # Update score display
 
-    # Every time the score reaches a multiple of 100, increase speed by 0.5
+    # Every time the score reaches a multiple of 75, increase speed by 0.5, play sound effect and display text
     if game_manager.score % 75 == 0:
         for tree in [game_manager.tree_1, game_manager.tree_2, game_manager.tree_3, game_manager.tree_4, game_manager.tree_5, game_manager.tree_6]:
             tree.speed += 0.5
@@ -316,8 +314,8 @@ game_manager = GameManager()
 game.on_update_interval(150, increment_score)
 
 # Game update function
-def on_on_update():
+def on_update():
     game_manager.update()
     game_manager.player.move()
 
-game.on_update(on_on_update)
+game.on_update(on_update)
