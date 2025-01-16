@@ -12,6 +12,19 @@ class SpriteKind:
     tree = SpriteKind.create()
     barricade = SpriteKind.create()
 
+# Splash screen menu
+def show_splash_screen():
+    game.show_long_text(
+        "Welcome to VTEC Velocity!",
+        DialogLayout.CENTER
+    )
+    # Wait until the user presses the A button
+    while not controller.A.is_pressed():
+        pause(100)
+
+# Call the splash screen function
+show_splash_screen()
+
 # Set the background image
 scene.set_background_image(assets.image("""
     background
@@ -272,6 +285,8 @@ class GameManager:
 
         # Collision check
         if (self.player.sprite.overlapsWith(self.barricade_1.sprite)):
+            # Play a game over melody
+            music.play_melody("C5 B A G F E D C ", 240)
             game.splash("Game Over!", "Press A to restart")
             game.reset()
 
