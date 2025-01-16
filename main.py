@@ -68,9 +68,10 @@ class Tree:
     def __init__(self, img_data, x, y):
         self.sprite = sprites.create(img_data, SpriteKind.tree)
         self.sprite.set_position(x, y)
+        self.speed = 1
 
     def update(self):
-        self.sprite.y += 1
+        self.sprite.y += self.speed
         if self.sprite.y > 120:
             self.sprite.y = 0
 
@@ -79,10 +80,11 @@ class Barricade:
     def __init__(self, img_data, x, y):
         self.sprite = sprites.create(img_data, SpriteKind.create())
         self.sprite.set_position(x, y)
+        self.speed = 1
 
     def update(self):
         # Move the barricade down
-        self.sprite.y += 1
+        self.sprite.y += self.speed
         # Reset to the top when it goes off-screen
         if self.sprite.y > 120:
             self.sprite.y = 0
@@ -94,6 +96,8 @@ class Barricade:
 class GameManager:
     def __init__(self):
         self.player = Player()
+        self.score = 0
+        info.set_score(self.score)
         # Manages the trees
         self.tree_1 = Tree(img("""
             ......cc66......
@@ -283,15 +287,33 @@ class GameManager:
         # Update barricades
         self.barricade_1.update()
 
-        # Collision check
-        if (self.player.sprite.overlapsWith(self.barricade_1.sprite)):
+# Collision check
+        if self.player.sprite.overlapsWith(self.barricade_1.sprite):
             # Play a game over melody
             music.play_melody("C5 B A G F E D C ", 240)
-            game.splash("Game Over!", "Press A to restart")
+            game.splash("Game Over!")
             game.reset()
+
+# Update the increment_score function
+def increment_score():
+    game_manager.score += 1  # Increase score
+    info.set_score(game_manager.score)  # Update score display
+
+    # Every time the score reaches a multiple of 100, increase speed by 0.5
+    if game_manager.score % 75 == 0:
+        for tree in [game_manager.tree_1, game_manager.tree_2, game_manager.tree_3, game_manager.tree_4, game_manager.tree_5, game_manager.tree_6]:
+            tree.speed += 0.5
+        game_manager.barricade_1.speed += 0.5
+        music.play(music.melody_playable(music.big_crash), music.PlaybackMode.UNTIL_DONE)
+        # Speech bubble for 750 milliseconds
+        game_manager.player.sprite.say_text("VTEC just kicked in yo", 750)
+        
 
 # Initialize the GameManager
 game_manager = GameManager()
+
+# Increment score every 150 milliseconds
+game.on_update_interval(150, increment_score)
 
 # Game update function
 def on_on_update():
