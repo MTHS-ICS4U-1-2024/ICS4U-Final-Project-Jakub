@@ -169,7 +169,8 @@ class GameManager:
         if self.player.sprite.overlapsWith(self.barricade_1.sprite):
             # Play a game over melody
             music.play_melody("C5 B A G F E D C ", 240)
-            game.splash("Game Over!")
+            score_message = "Your Score: " + str(self.score)
+            game.splash("Game Over!", score_message)
             game.reset()
 
 # Update the increment_score function
