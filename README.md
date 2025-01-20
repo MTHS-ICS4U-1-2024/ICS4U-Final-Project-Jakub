@@ -1,5 +1,7 @@
 # VTEC Velocity
 
+![Header](asset_files/README_images/header_image.png)
+
 Welcome to **VTEC Velocity**, a retro-style racing game for the Adafruit PyBadge! Test your reflexes, avoid obstacles, and score as high as possible as you race down the road.
 
 ## Features
@@ -8,7 +10,9 @@ Welcome to **VTEC Velocity**, a retro-style racing game for the Adafruit PyBadge
 - **Game over animation**: A melody plays when you crash, and your final score is displayed.
 
 ## How to Play
-    ![GamePlay](asset_files/README_images/game_play.png)
+
+![GamePlay](asset_files/README_images/game_play.gif)
+
 1. **Objective**: Move your car left and right to avoid obstacles and score points. 
 2. **Controls**:
    - Use the **D-pad** to steer your car.
@@ -36,3 +40,5 @@ Welcome to **VTEC Velocity**, a retro-style racing game for the Adafruit PyBadge
 ---
 
 Have fun playing **VTEC Velocity**! Feedback and contributions are welcome. 🚗💨
+
+ 
