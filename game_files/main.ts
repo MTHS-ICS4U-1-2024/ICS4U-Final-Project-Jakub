@@ -1,122 +1,300 @@
-scene.setBackgroundImage(img`
-    3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-    3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-    3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-    3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-    3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-    3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-    3333333333333333333333333333333333333333333333333333333333333333333353333333333333333333333333333333333333333333333333333333333333333333333333333333533333333333
-    3333333333333333333333353333333333333333333333333333333333333333333555333333333333333333333333333333333533333333333333333333333333333333333333333335553333333333
-    3333333333333333333333555333333333333333333333333333333333333333335555533333333333333333333333333333335553333333333333333333333333333333333333333355555333333333
-    3333333333333333333333353333333333333333333333333333333333333333333555333333333333333333333333333333333533333333333333333333333333333333333333333335553333333333
-    3333333333333333333333333333333333333333333333333111333333333333333535333333333333333333333333333333333333333333333333333333333331113333333333333335353333333333
-    33333d11d3333333333333333333333333333333333333331111133333333333333333333333333333333d11d33333333333333333333333333333333333333311111333333333333333333333333333
-    33331111113333333333333333333333333333333331133111111d3333333333333333333333333333331111113333333333333333333333333333333331133111111d33333333333333333333333333
-    3331111111d33333333333333333333333333333331111d1111111133333333333333333333333333331111111d33333333333333333333333333333331111d111111113333333333333333333333333
-    33311111111d11333333333333333333333333333d1111111111111d33333333333333333333333333311111111d11333333333333333333333333333d1111111111111d333333333333333333333333
-    331111111111111333333333333333333333333d11111111111111111d3333333333333333333333331111111111111333333333333333333333333d11111111111111111d3333333333333333333333
-    1d1111111111111d31113333333333333333333333333333333333333333333366633333333333311d1111111111111d3111333333333333333333333333333333333333333333336663333333333331
-    1111111111111111111113333333333333333333333333333333333333333336776633333333331111111111111111111111133333333333333333333333333333333333333333367766333333333311
-    1111111111166666111113333333333333533333333333333333333333333366777633333333331111111111111666661111133333333333335333333333333333333333333333667776333333333311
-    111111111166777661111111d333333335553333333333333333333333333367777663333333d111111111111166777661111111d333333335553333333333333333333333333367777663333333d111
-    3333333336677777663333333333333355555333333333333333333333333367777763333333333333333333366777776633333333333333555553333333333333333333333333677777633333333333
-    3333333336777777763333333333333335553333333333333333333333333367777763333333333333333333367777777633333333333333355533333333333333333333333333677777633333333333
-    3333333366777777766333333333333335353333333333333333333333333367777763333333333333333333667777777663333333333333353533333333333333333333333333677777633333333333
-    3333333367777777776333333333333333333333333333333335333333333367777763333333333333333333677777777763333333333333333333333333333333353333333333677777633333333333
-    3333333367777777776333366333333333333333333333333355533333333367777763333333333333333333677777777763333663333333333333333333333333555333333333677777633333333333
-    3333333367777777776333677633333333333333333333333335333336633367777763333333333333333333677777777763336776333333333333333333333333353333366333677777633333333333
-    3333333367777777776336677663333333333333333333333333333367763367777763333333333333333333677777777763366776633333333333333333333333333333677633677777633333333333
-    3333333367777777776336777763333333333333333333333333333367763367777763333333333333333333677777777763367777633333333333333333333333333333677633677777633333333333
-    3333333367777777776336777763333333333333333333333333333367763367777763333333333333333333677777777763367777633333333333333333333333333333677633677777633333333333
-    6666333367777777776666777763333333333666666333333333333367763367777763333333333666663333677777777766667777633333333336666663333333333333677633677777633333333336
-    7776633367777777777777777763333333336666666633333333333367763367777763336633336677766333677777777777777777633333333366666666333333333333677633677777633366333366
-    7777633367777777777777777633333333366666666663333333333367763367777763367663366777776333677777777777777776333333333666666666633333333333677633677777633676633667
-    7777763367777777777777776633333333366666666663333333333367763367777763367763367777777633677777777777777766333333333666666666633333333333677633677777633677633677
-    7777763367777777776666666333333333666666666663333333333367763367777763367763367777777633677777777766666663333333336666666666633333333333677633677777633677633677
-    7777776367777777776333333333333333666666666663333333333367776667777763677763367777777763677777777763333333333333336666666666633333333333677766677777636777633677
-    7777776367777777776333333333333333666666666666333333333366777777777766677766667777777763677777777763333333333333336666666666663333333333667777777777666777666677
-    7777776367777777776333666666666333666666666666333333333336677777777776677666677777777763677777777763336666666663336666666666663333333333366777777777766776666777
-    7777776667777777776366677777776663666666666666333333333333666677777777777666677777777766677777777763666777777766636666666666663333333333336666777777777776666777
-    7777776667777777776667777777777766666666666666333366666633333677777777777666677777777766677777777766677777777777666666666666663333666666333336777777777776666777
-    7777776667777777776677777777777776666666666666366677777666333677777777776666677777777766677777777766777777777777766666666666663666777776663336777777777766666777
-    7777777667777777776777777777777777666666666666667777777776633677777766666666677777777776677777777767777777777777776666666666666677777777766336777777666666666777
-    7777777667777777766777777777777777666666666666677777777777663677777766666666677777777776677777777667777777777777776666666666666777777777776636777777666666666777
-    7777777667777777767777777777777777766666666666777777777777766677777766666666677777777776677777777677777777777777777666666666667777777777777666777777666666666777
-    7777777667777777667777777777777777766666666666777777777777766677777766666666677777777776677777776677777777777777777666666666667777777777777666777777666666666777
-    7777777667777777677777777777777777776666666666777777777777766677777766666666677777777776677777776777777777777777777766666666667777777777777666777777666666666777
-    7777777667777733333333777777777777776666666666777777773333333377777766666666677777777776677777333333337777777777777766666666667777777733333333777777666666666777
-    777777766777333dddddd3333777777777776666666666777777333dddddd3333777666666666777777777766777333dddddd3333777777777776666666666777777333dddddd3333777666666666777
-    7777777666333ddddddddddd33377777777766666666667777333ddddddddddd33376666666667777777777666333ddddddddddd33377777777766666666667777333ddddddddddd3337666666666777
-    77777776633ddddddddddddddd3337777777666666666677733ddddddddddddddd3336666666677777777776633ddddddddddddddd3337777777666666666677733ddddddddddddddd33366666666777
-    7777777333dddddddddddddddddd3333777766666666666333dddddddddddddddddd3333666667777777777333dddddddddddddddddd3333777766666666666333dddddddddddddddddd333366666777
-    33777333ddddddddddddddddddddddd33333333333666333ddddddddddddddddddddddd33333333333777333ddddddddddddddddddddddd33333333333666333ddddddddddddddddddddddd333333333
-    d33333ddddddddddddddddddddddddddd33dddddd33333ddddddddddddddddddddddddddd33dddddd33333ddddddddddddddddddddddddddd33dddddd33333ddddddddddddddddddddddddddd33ddddd
-    ddd33ddddddddddddddddddddddddd333dddddddddd33ddddddddddddddddddddddddd333dddddddddd33ddddddddddddddddddddddddd333dddddddddd33ddddddddddddddddddddddddd333ddddddd
-    ddddd33ddddddddddddddddddddd33ddddddddddddddd33ddddddddddddddddddddd33ddddddddddddddd33ddddddddddddddddddddd33ddddddddddddddd33ddddddddddddddddddddd33dddddddddd
-    ddddddd333dddddddddddddddd33ddddddddddddddddddd333dddddddddddddddd33ddddddddddddddddddd333dddddddddddddddd33ddddddddddddddddddd333dddddddddddddddd33dddddddddddd
-    dddddddddd333ddddddddddd33dddddddddddddddddddddddd333ddddddddddd33dddddddddddddddddddddddd333ddddddddddd33dddddddddddddddddddddddd333ddddddddddd33dddddddddddddd
-    dddddddddddd333ddddddd33dddddddddddddddddddddddddddd333ddddddd33dddddddddddddddddddddddddddd333ddddddd33dddddddddddddddddddddddddddd333ddddddd33dddddddddddddddd
-    dddddddddddddd333ddd33dddddddddddddddddddddddddddddddd333ddd33dddddddddddddddddddddddddddddddd333ddd33dddddddddddddddddddddddddddddddd333ddd33dddddddddddddddddd
-    dddddddddddddddd3333dddddddddddddddddddddddddddddddddddd3333dddddddddddddddddddddddddddddddddddd3333dddddddddddddddddddddddddddddddddddd3333dddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    `)
+// !/usr/bin/env python3
+/** 
+Created by: Jakub Malhotra
+Created on: December 2024
+This is my "VTEC Velocity" game for the Adafruit Pybadge
+
+ */
+namespace SpriteKind {
+    //  Create the SpriteKinds not already created by makecode
+    export const tree = SpriteKind.create()
+    export const barricade = SpriteKind.create()
+}
+
+//  Splash screen menu
+function show_splash_screen() {
+    //  Set a custom background color
+    scene.setBackgroundColor(150)
+    //  Create a splash image
+    let splash_image = image.create(160, 120)
+    splash_image.fill(150)
+    //  Print the title on the splash image
+    let title = "VTEC Velocity!"
+    let x_position = Math.idiv(splash_image.width - title.length * 6, 2)
+    //  Approximate centering
+    let y_position = Math.idiv(splash_image.height, 2) - 8
+    //  Center vertically
+    splash_image.print(title, x_position, y_position, 6)
+    //  Print in black
+    //  Set the splash image as the background
+    scene.setBackgroundImage(splash_image)
+    //  Show a welcome message with instructions
+    game.showLongText("Welcome to VTEC Velocity!", DialogLayout.Center)
+    //  Wait until the user presses the A button
+    while (!controller.A.isPressed()) {
+        pause(100)
+    }
+}
+
+//  Call the splash screen function
+show_splash_screen()
+//  Set the background image
+scene.setBackgroundImage(assets.image`
+    background
+`)
+//  Define the Player class
+class Player {
+    static player_image: Image
+    private ___player_image_is_set: boolean
+    private ___player_image: Image
+    get player_image(): Image {
+        return this.___player_image_is_set ? this.___player_image : Player.player_image
+    }
+    set player_image(value: Image) {
+        this.___player_image_is_set = true
+        this.___player_image = value
+    }
+    
+    sprite: Sprite
+    road_min_x: number
+    road_max_x: number
+    public static __initPlayer() {
+        Player.player_image = img`
+        . . . . . . e e c c e e . . . .
+        . . . . . e 2 2 2 2 2 2 e . . .
+        . . . . 2 c 2 2 2 2 2 2 c 2 . .
+        . . . e 2 c 4 2 2 2 2 2 c 2 e .
+        . . . f 2 2 4 2 2 2 2 2 c 2 f .
+        . . . f 2 2 4 2 2 2 2 2 2 2 f .
+        . . . f 2 2 4 2 2 2 2 2 2 2 f .
+        . . . f 2 c 2 4 4 2 2 2 c 2 f .
+        . . . e 2 c e c c c c e c 2 e .
+        . . . e 2 e c b b b b c e 2 e .
+        . . . e 2 e b b b b b b e 2 e .
+        . . . e e e e e e e e e e e e .
+        . . . f e d e e e e e e d e f .
+        . . . f e 2 d e e e e d 2 e f .
+        . . . f f e e e e e e e e f f .
+        . . . . f f . . . . . . f f . .
+    `
+    }
+    
+    constructor() {
+        this.sprite = sprites.create(this.player_image, SpriteKind.Player)
+        this.sprite.setStayInScreen(true)
+        controller.moveSprite(this.sprite)
+        this.road_min_x = 38
+        //  Left boundary of the road
+        this.road_max_x = 122
+    }
+    
+    //  Right boundary of the road
+    public move() {
+        //  Restrict the player's movement to within the road boundaries
+        if (this.sprite.x < this.road_min_x) {
+            this.sprite.x = this.road_min_x
+        } else if (this.sprite.x > this.road_max_x) {
+            this.sprite.x = this.road_max_x
+        }
+        
+    }
+    
+}
+
+Player.__initPlayer()
+
+class Tree {
+    static tree_image: Image
+    private ___tree_image_is_set: boolean
+    private ___tree_image: Image
+    get tree_image(): Image {
+        return this.___tree_image_is_set ? this.___tree_image : Tree.tree_image
+    }
+    set tree_image(value: Image) {
+        this.___tree_image_is_set = true
+        this.___tree_image = value
+    }
+    
+    sprite: Sprite
+    speed: number
+    public static __initTree() {
+        Tree.tree_image = img`
+        ......cc66......
+        .....c6576c.....
+        ....c677576c....
+        ....cc677666....
+        ...cc6c6667cc...
+        ..6c666777cc6c..
+        ..c76666766776..
+        ..c6777777776c..
+        ..cc67777776cc..
+        .c67cc76676676c.
+        .c777666667777c.
+        .c6777777777766.
+        .cc7767776776666
+        c676cc6766666776
+        c777766666677776
+        cc7777777777776c
+        .c676777677767c.
+        ..cc667666766c..
+        ...ccc6c66ccc...
+        .....cccccc.....
+        .......ee.......
+        ......eeee......
+        .....eeeeee.....
+        .......ee.......
+    `
+    }
+    
+    constructor(x: number, y: number) {
+        this.sprite = sprites.create(this.tree_image, SpriteKind.tree)
+        this.sprite.setPosition(x, y)
+        this.speed = 1
+    }
+    
+    public update() {
+        this.sprite.y += this.speed
+        if (this.sprite.y > 120) {
+            this.sprite.y = 0
+        }
+        
+    }
+    
+}
+
+Tree.__initTree()
+
+//  Define the Barricade class
+class Barricade {
+    static barricade_image: Image
+    private ___barricade_image_is_set: boolean
+    private ___barricade_image: Image
+    get barricade_image(): Image {
+        return this.___barricade_image_is_set ? this.___barricade_image : Barricade.barricade_image
+    }
+    set barricade_image(value: Image) {
+        this.___barricade_image_is_set = true
+        this.___barricade_image = value
+    }
+    
+    sprite: Sprite
+    speed: number
+    public static __initBarricade() {
+        Barricade.barricade_image = img`
+        .........22..........22.........
+        .........22..........22.........
+        .........cc..........cc.........
+        cccccccccccccccccccccccccccccccc
+        c444111444111444111444111444111c
+        c144411144411144411144411144411c
+        c114441114441114441114441114441c
+        c111444111444111444111444111444c
+        c411144411144411144411144411144c
+        c441114441114441114441114441114c
+        c444111444111444111444111444111c
+        cccccccccccccccccccccccccccccccc
+        .....cc..................cc.....
+        ....cc....................cc....
+        ...cc......................cc...
+        ..cc........................cc..
+    `
+    }
+    
+    constructor(x: number, y: number) {
+        this.sprite = sprites.create(this.barricade_image, SpriteKind.barricade)
+        this.sprite.setPosition(x, y)
+        this.speed = 1
+    }
+    
+    public update() {
+        //  Move the barricade down
+        this.sprite.y += this.speed
+        //  Reset to the top when it goes off-screen
+        if (this.sprite.y > 120) {
+            this.sprite.y = 0
+            //  Set x randomly within the road boundary
+            this.sprite.x = randint(48, 112)
+        }
+        
+    }
+    
+}
+
+Barricade.__initBarricade()
+
+//  Define the GameManager class
+class GameManager {
+    player: Player
+    score: number
+    tree_1: Tree
+    tree_2: Tree
+    tree_3: Tree
+    tree_4: Tree
+    tree_5: Tree
+    tree_6: Tree
+    barricade_1: Barricade
+    constructor() {
+        this.player = new Player()
+        this.score = 0
+        info.setScore(this.score)
+        //  Manages the trees
+        this.tree_1 = new Tree(16, 42)
+        this.tree_2 = new Tree(16, 85)
+        this.tree_3 = new Tree(16, 127)
+        this.tree_4 = new Tree(144, 42)
+        this.tree_5 = new Tree(144, 85)
+        this.tree_6 = new Tree(144, 127)
+        //  Manages the barricades
+        this.barricade_1 = new Barricade(52, 0)
+    }
+    
+    public update() {
+        let score_message: any;
+        //  Update trees
+        this.tree_1.update()
+        this.tree_2.update()
+        this.tree_3.update()
+        this.tree_4.update()
+        this.tree_5.update()
+        this.tree_6.update()
+        //  Update barricades
+        this.barricade_1.update()
+        //  Collision check
+        if (this.player.sprite.overlapsWith(this.barricade_1.sprite)) {
+            //  Play a game over melody
+            music.playMelody("C5 B A G F E D C ", 240)
+            score_message = "Your Score: " + ("" + this.score)
+            game.splash("Game Over!", score_message)
+            game.reset()
+        }
+        
+    }
+    
+}
+
+//  Update the increment_score function
+//  Increment score every 150 milliseconds
+game.onUpdateInterval(150, function increment_score() {
+    game_manager.score += 1
+    //  Increase score
+    info.setScore(game_manager.score)
+    //  Update score display
+    //  Every time the score reaches a multiple of 75, increase speed by 0.5, play sound effect and display text
+    if (game_manager.score % 75 == 0) {
+        for (let tree of [game_manager.tree_1, game_manager.tree_2, game_manager.tree_3, game_manager.tree_4, game_manager.tree_5, game_manager.tree_6]) {
+            tree.speed += 0.5
+        }
+        game_manager.barricade_1.speed += 0.5
+        music.play(music.melodyPlayable(music.bigCrash), music.PlaybackMode.UntilDone)
+        //  Speech bubble for 750 milliseconds
+        game_manager.player.sprite.sayText("VTEC just kicked in yo", 750)
+    }
+    
+})
+//  Initialize the GameManager
+let game_manager = new GameManager()
+//  Game update function
+game.onUpdate(function on_update() {
+    game_manager.update()
+    game_manager.player.move()
+})
