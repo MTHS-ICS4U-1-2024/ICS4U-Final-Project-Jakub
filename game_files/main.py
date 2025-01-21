@@ -14,10 +14,28 @@ class SpriteKind:
 
 # Splash screen menu
 def show_splash_screen():
+    # Set a custom background color
+    scene.set_background_color(150)
+    
+    # Create a splash image
+    splash_image = image.create(160, 120)
+    splash_image.fill(150)
+    
+    # Print the title on the splash image
+    title = "VTEC Velocity!"
+    x_position = (splash_image.width - len(title) * 6) // 2  # Approximate centering
+    y_position = splash_image.height // 2 - 8  # Center vertically
+    splash_image.print(title, x_position, y_position, 6)  # Print in black
+    
+    # Set the splash image as the background
+    scene.set_background_image(splash_image)
+    
+    # Show a welcome message with instructions
     game.show_long_text(
         "Welcome to VTEC Velocity!",
         DialogLayout.CENTER
     )
+    
     # Wait until the user presses the A button
     while not controller.A.is_pressed():
         pause(100)

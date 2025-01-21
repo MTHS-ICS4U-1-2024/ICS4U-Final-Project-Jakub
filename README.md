@@ -23,19 +23,13 @@ Welcome to **VTEC Velocity**, a retro-style racing game for the Adafruit PyBadge
 4. **Game Over**: The game ends when your car collides with a barricade. A melody plays, and your final score is displayed.
 
 ## How to Play in MakeCode Arcade
-1. Go to [MakeCode Arcade](https://arcade.makecode.com/).
-2. Click on **New Project**.
-3. Copy and paste the code from `main.py` into the JavaScript/Blocks editor.
-4. Test the game in the built-in simulator by pressing the **Play** button.
-
-## How to Download to Your PyBadge
-1. Connect your Adafruit PyBadge to your computer via USB.
-2. Ensure your PyBadge is in bootloader mode:
+1. Download the precompiled `.uf2` file: [arcade-VTEC-Velocity.uf2](asset_files/arcade-VTEC-Velocity.uf2).
+2. Connect your Adafruit PyBadge to your computer via USB.
+3. Put your PyBadge in bootloader mode:
    - Press the reset button twice quickly. The device should appear as a USB drive.
-3. Download the `.uf2` file from MakeCode Arcade:
-   - In the MakeCode editor, click on **Download**.
-   - Save the `.uf2` file to your PyBadge USB drive.
-4. Once the transfer is complete, the PyBadge will reboot, and you can start playing **VTEC Velocity**!
+4. Copy the `arcade-VTEC-Velocity.uf2` file to the PyBadge USB drive.
+5. Once the transfer is complete, the PyBadge will reboot, and you can start playing **VTEC Velocity**!
+
 
 ---
 
