@@ -1,5 +1,5 @@
 {
-    "name": "VTEC-Velocity",
+    "name": "VTEC-Velocity Game",
     "description": "",
     "dependencies": {
         "device": "*"
@@ -10,17 +10,38 @@
         "README.md",
         "assets.json",
         "main.py",
-        "asset_library.py"
+        "images.g.jres",
+        "images.g.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "2.0.7",
+        "target": "1.12.58",
         "targetId": "arcade"
     },
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "pyprj"
+    "preferredEditor": "pyprj",
+    "palette": [
+        "#000000",
+        "#FFF1E8",
+        "#FF004D",
+        "#FF77A8",
+        "#FFA300",
+        "#FFEC27",
+        "#008751",
+        "#00E436",
+        "#29ADFF",
+        "#C2C3C7",
+        "#7E2553",
+        "#83769C",
+        "#5F574F",
+        "#FFCCAA",
+        "#AB5236",
+        "#1D2B53"
+    ]
 }
