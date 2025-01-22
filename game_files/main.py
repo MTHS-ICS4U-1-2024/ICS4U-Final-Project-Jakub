@@ -73,15 +73,15 @@ class Player:
         self.sprite = sprites.create(self.player_image, SpriteKind.player)
         self.sprite.set_stay_in_screen(True)
         controller.move_sprite(self.sprite)
-        self.road_min_x = 38  # Left boundary of the road
-        self.road_max_x = 122  # Right boundary of the road
+        self.ROAD_MIN_X = 38  # Left boundary of the road
+        self.ROAD_MIN_X = 122  # Right boundary of the road
 
     def move(self):
         # Restrict the player's movement to within the road boundaries
-        if self.sprite.x < self.road_min_x:
-            self.sprite.x = self.road_min_x
-        elif self.sprite.x > self.road_max_x:
-            self.sprite.x = self.road_max_x
+        if self.sprite.x < self.ROAD_MIN_X:
+            self.sprite.x = self.ROAD_MIN_X
+        elif self.sprite.x > self.ROAD_MIN_X:
+            self.sprite.x = self.ROAD_MIN_X
 
 class Tree:
     tree_image = img("""
